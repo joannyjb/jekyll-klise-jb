@@ -1,8 +1,8 @@
 ---
-title: Colophon
+title: Jean-Baptiste Joanny
 permalink: /about/
 layout: page
-excerpt: Hello peeps, I'm student of computer science from Banyuwangi, living in Jogjakarta. This blog for documentation about my programming journey, running on jekyll, hosting on netlify and using my own simple theme.
+excerpt: Co-gérant de l'agence de référencement, webmarketing et digitalisation des entreprises <a href="https://www.indixit.com" target="_blank" title="agence de référencement naturel">@indixit</a> depuis 2008. Formateur et intervenant professionnel auprès des écoles et universités de Bordeaux. Papa surfeur épucurien ascendant geek.
 comments: false
 ---
 

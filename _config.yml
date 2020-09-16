@@ -1,91 +1,41 @@
-# Site settings
-title: Jb Joanny / Expert marketing web & SEO guru # site title
-description: >- # site description
-  silence is golden !
-lang: fr_FR # default lang
-timezone: Europe/Paris # set your timezone
-image: assets/img/ogp.png # This image used for Open Graph more info https://ogp.me/
-repo: # site repo [optional]
-mode: dark # default theme "dark" | "light"
-
-# Profile settings
-author:
-  name: Jean-Baptiste Joanny # author name
-  bio: >- # tell to the world
-    Co-gérant de l'agence de référencement naturel <a href="https://www.indixit.com" target="_blank">@indixit</a> depuis 2008. Intervenant professionnel et formateur.
-    Papa surfeur épicurien ascendant geek.
-  username: joannyjb # general username
-  github: indixit_jb # github username
-  twitter: indixit_jb # twitter username
-  facebook: facebook_username # facebook username
-  email: jb@joanny.org # email adress
-  avatar: /assets/img/logo_jb_boucle.gif # change with your own avatar
-
-# URL settings
-url: "https://www.joanny.org" #
-baseurl:
-permalink: /:title/
-google_analytics: # leave it blank if not wish
-fb_appid:
-
-# Collection setting
+author: {avatar: /assets/img/logo_jb_boucle.gif, bio: "Co-g\xE9rant de l'agence de\
+    \ r\xE9f\xE9rencement naturel <a href=\"https://www.indixit.com\" target=\"_blank\"\
+    >@indixit</a> depuis 2008. Intervenant professionnel et formateur. Papa surfeur\
+    \ \xE9picurien ascendant geek.", email: jb@joanny.org, facebook: jeanbaptiste.joanny,
+  github: indixit_jb, name: Jean-Baptiste Joanny, twitter: indixit_jb, username: joannyjb}
+baseurl: null
 collections:
-  posts:
-    output: true
-
-# Markdown settings
-markdown: kramdown
-highlighter: rouge
-kramdown:
-  syntax_highlighter: rouge
-
-# Default front matter
+  posts: {output: true}
 defaults:
-  - scope:
-      path: ""
-    values:
-      layout: post
-      comments: false
-
-# Jekyll Compose default front matter
+- scope: {path: ''}
+  values: {comments: false, layout: post}
+description: "Consultant, chef d'entreprise et intervenant professionnel en r\xE9\
+  f\xE9rencement naturel, marketing web et digitalisation depuis 2008."
+exclude: [CNAME, Gemfile, Gemfile.lock, LICENSE, CHANGELOG.md, README.md, node_modules,
+  CODE_OF_CONDUCT.md, CONTRIBUTING.md, lighthouse.png, klise-*.gem, klise.gemspec]
+fb_appid: null
+google_analytics: null
+highlighter: rouge
+image: assets/img/ogp.png
+include: [_redirects, .htaccess]
 jekyll_compose:
-  post_default_front_matter:
-    modified:
-    tags: []
-    description:
   draft_default_front_matter:
-    modified:
+    description: null
+    modified: null
     tags: []
-    description:
-
-# Homepage limit posts
-number_of_posts: 5
-
-# Build settings
-# theme: klise
-sass:
-  style: compressed
-
-include:
-  - _redirects
-  - .htaccess
-
-exclude:
-  - CNAME
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - CHANGELOG.md
-  - README.md
-  - node_modules
-  - CODE_OF_CONDUCT.md
-  - CONTRIBUTING.md
-  - lighthouse.png
-  - klise-*.gem
-  - klise.gemspec
-
-# Plugins
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-postfiles
+  post_default_front_matter:
+    description: null
+    modified: null
+    tags: []
+kramdown: {syntax_highlighter: rouge}
+lang: fr_FR
+markdown: kramdown
+mode: light
+number_of_posts: 10
+permalink: /:title/
+plugins: [jekyll-feed, jekyll-sitemap, jekyll-postfiles]
+repo: null
+sass: {style: compressed}
+timezone: Europe/Paris
+title: Jb Joanny / Expert marketing web & SEO guru
+url: https://www.joanny.org
